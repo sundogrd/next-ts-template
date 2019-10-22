@@ -1,7 +1,6 @@
 const path = require('path')
-const withTypescript = require('@zeit/next-typescript')
 
-module.exports = withTypescript({
+module.exports = {
   webpack: config => {
     config.plugins = config.plugins || []
 
@@ -14,4 +13,4 @@ module.exports = withTypescript({
     }
     return config
   }
-})
+}
